@@ -1,0 +1,48 @@
+.header {
+   background-color: var(--bg-color-white);
+   height: 60px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (min-width: 1024px) {
+         & {
+            display: grid;
+            grid: 1fr/1fr 1fr 80px;
+         }
+      }
+   }
+
+   &__btn {
+      display: none;
+      @media screen and (min-width: 720px) {
+         & {
+            display: block;
+         }
+      }
+   }
+
+   &__img {
+      @media screen and (min-width: 720px) {
+         & {
+            display: none;
+         }
+      }
+   }
+   &__logo {
+      @media screen and (min-width: 720px) {
+         & {
+            margin-left: 60px;
+         }
+      }
+      @media screen and (min-width: 1024px) {
+         & {
+            margin-left: 0;
+         }
+      }
+   }
+}

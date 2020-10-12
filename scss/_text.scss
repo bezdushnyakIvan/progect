@@ -1,0 +1,107 @@
+.text {
+   font-family: Noto Sans JP;
+   font-style: normal;
+
+   letter-spacing: 0.1px;
+   font-weight: 400;
+
+   &_size_sm {
+      font-size: 0.87rem;
+      line-height: 20px;
+   }
+
+   &_size_md {
+      font-size: 1rem;
+      line-height: 24px;
+   }
+
+   &_size_lg {
+      font-size: 1.12rem;
+      line-height: 28px;
+   }
+
+   &_theme_black {
+      color: var(--text-color-black);
+   }
+
+   &_theme_gray {
+      color: var(--text-color-gray);
+   }
+
+   &_weight {
+      &_regular {
+         font-weight: 400;
+      }
+      &_medium {
+         font-weight: 500;
+      }
+      &_bold {
+         font-weight: 700;
+      }
+   }
+}
+
+.heading {
+   font-style: normal;
+   font-weight: bold;
+
+   &__h1 {
+      font-size: 2rem;
+      line-height: 38px;
+
+      text-align: center;
+      letter-spacing: -0.4px;
+
+      @media screen and (min-width: 1024px) {
+         & {
+            font-size: 2.5rem;
+            line-height: 48px;
+         }
+      }
+
+      @media screen and (min-width: 1440px) {
+         & {
+            font-size: 3.5rem;
+            line-height: 60px;
+         }
+      }
+   }
+
+   &__h2 {
+      font-size: 1.5rem;
+      line-height: 32px;
+
+      letter-spacing: -0.1px;
+
+      @media screen and (min-width: 1024px) {
+         & {
+            font-size: 2rem;
+            line-height: 38px;
+         }
+      }
+
+      @media screen and (min-width: 1440px) {
+         & {
+            font-size: 2.5rem;
+            line-height: 48px;
+         }
+      }
+   }
+
+   &__h3 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: -0.1px;
+   }
+
+   &__h4 {
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 24px;
+
+      letter-spacing: 0.1px;
+   }
+}

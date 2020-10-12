@@ -1,0 +1,41 @@
+@import "_header.scss";
+@import "_nullstyle.scss";
+@import "_burger.scss";
+@import "_btn.scss";
+@import "_root";
+@import "_navbar.scss";
+@import "_firstscreen.scss";
+@import "_partners.scss";
+@import "_airplay-content.scss";
+@import "_link.scss";
+@import "_text.scss";
+@import "_block.scss";
+@import "_switch.scss";
+@import "_subscription.scss";
+@import "_card";
+@import "_footer.scss";
+
+.container {
+   width: 92%;
+}
+html,
+body {
+   height: 100%;
+}
+.header {
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 50;
+}
+* {
+   font-size: 16px;
+   font-family: "Noto Sans JP", sans-serif;
+   box-sizing: border-box;
+}
+.main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
